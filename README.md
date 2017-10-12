@@ -10,7 +10,7 @@
 </p>
 
 This Todo List Shows:
-- CRUD Operations with swallow
+- CRUD Operations with swallowjs
 - Routing
 
 ## How to serve
