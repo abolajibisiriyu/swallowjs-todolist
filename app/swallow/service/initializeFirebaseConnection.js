@@ -114,18 +114,22 @@ if (typeof firebase !== 'undefined') {
             var nodeRef = firebaseBaseDatabase.ref(path);
 
             if (!path || path == "undefined") {
-                callBackData({error: 'path required to interact with Firebase findOne'});
+                return callBackData({error: 'path required to interact with Firebase findOne'});
             }
 
-            nodeRef.on('value', function (snapshot) {
-                var data = snapshot.val();
-                if (!data.node_id) {
-                    data.node_id = snapshot.key;
-                }
-                callBackData({data: data});
-            }, function (error) {
-                callBackData({error: error});
-            });
+            nodeRef.remove().then(function() {
+                return callBackData({error: null, status: true});
+            }).catch(function(error) {
+                return callBackData({error: error, status: false});
+            });//('value', function (snapshot) {
+            //     var data = snapshot.val();
+            //     if (!data.node_id) {
+            //         data.node_id = snapshot.key;
+            //     }
+            //     callBackData({data: data});
+            // }, function (error) {
+            //     callBackData({error: error});
+            // });
         },
 
         /**

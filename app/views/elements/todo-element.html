@@ -1,0 +1,9 @@
+<ul class="list-group text-center" id="todo-list">
+    {{#data}}
+    <li class="list-group-item" data-id="{{key}}">
+        <a href="#/todos/{{key}}" class="pull-left edit-todo">Edit</a> {{name}}
+        <a href="#" class="pull-right delete-todo">Delete</a>
+    </li>
+    {{/data}}
+    <!-- <li class="list-group-item">Item 1 <a href="#" class="pull-right delete-todo">Delete</a></li> -->
+</ul>

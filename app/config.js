@@ -13,21 +13,21 @@
  * @type {{private, viewTemplates, firebaseConfig, constants}}
  */
 
-var CONFIG = (function () {
+var CONFIG = (function() {
     var SwallowJs = {
         'main_container': 'swallow',
         'remove_swallow_css': false,
         'beta': true,
-        'loading': true,
-        'debug': true
+        'loading': false,
+        'debug': false
     };
 
     // Templates
     var views = {
-        'home':              'views/home.html',
-        'page_loading':      'views/page_loading.html',
-        'about':   'views/about.html',
-        '404':               'views/error/404.html',
+        'home': 'views/home.html',
+        // 'page_loading': 'views/page_loading.html',
+        'todo': 'views/todo.html',
+        '404': 'views/error/404.html',
     };
 
     var constants = {
@@ -36,24 +36,25 @@ var CONFIG = (function () {
     };
 
     var firebase_config = {
-        apiKey: 'APP-API-KEY',
-        authDomain: 'APP-AUTH-DOMAIN',
-        databaseURL: 'APP-DATABASE-URL',
-        storageBucket: 'APP-STORAGE-BUCKET',
-        messagingSenderId: 'APP-MESSAGE-SENDER-ID'
+        apiKey: "AIzaSyD2V1LPW-OOu0xDui3rDnpQKlFlAnQxm00",
+        authDomain: "my-first-app-f56db.firebaseapp.com",
+        databaseURL: "https://my-first-app-f56db.firebaseio.com",
+        projectId: "my-first-app-f56db",
+        storageBucket: "my-first-app-f56db.appspot.com",
+        messagingSenderId: "698755993461"
     };
 
     return {
-        private: function (name) {
+        private: function(name) {
             return SwallowJs[name];
         },
-        viewTemplates: function (name) {
+        viewTemplates: function(name) {
             return views[name];
         },
-        firebaseConfig: function () {
+        firebaseConfig: function() {
             return firebase_config;
         },
-        constants: function (name) {
+        constants: function(name) {
             return constants[name];
         }
     };
@@ -63,7 +64,7 @@ var CONFIG = (function () {
  * Default SwallowJs main container
  * Please do not remove line 65. The system needs to work properly
  */
-var swallowJsContainer  = $('#' + CONFIG.private('main_container'));
+var swallowJsContainer = $('#' + CONFIG.private('main_container'));
 
 /**
  *
