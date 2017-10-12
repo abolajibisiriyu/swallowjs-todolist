@@ -34,20 +34,3 @@ Check out this article https://medium.com/@abolajisulaimanbisiriyu/how-to-serve-
 
 To check out live examples and docs, visit [docs-swallowjs.github.io](https://docs-swallowjs.github.io/).
 
-## Questions
-
-For questions and support please use the [community chat](https://chat.vuejs.org/).
-
-## Stay In Touch
-
-For the latest releases and announcements, follow on Twitter: [@hurlatunde](https://twitter.com/hurlatunde)
-
-## Supporting swallow.js
-
-SwallowJs wouldn't kick ass if it weren't for these great souls:
-
-<ul>
-<li> Femi TAIWO / @dftaiwo </li>
-<li> Sunday AKINSETE / @akindroid </li>
-<li> Abolaji Sulaiman B / @abolaji_dev </li>
-</ul>
