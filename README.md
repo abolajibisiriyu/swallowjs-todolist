@@ -24,7 +24,7 @@ The Firebase CLI (Command Line Interface) requires Node.js and npm, which can bo
   firebase serve
   ```
 
-## Dont want to use firabse to serve ?
+## Dont want to use firabase to serve ?
 Check out this article https://medium.com/@abolajisulaimanbisiriyu/how-to-serve-swallow-js-locally-using-chrome-web-server-c99a87aa240f
 
 ## Documentation
